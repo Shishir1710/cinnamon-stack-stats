@@ -20,4 +20,15 @@ A compact, highly customizable Cinnamon desktop panel applet that monitors real-
 
 ### Method 1: Git Clone
 ```bash
-git clone [https://github.com/]<your-username>/cinnamon-stack-stats.git ~/.local/share/cinnamon/applets/system-stats@shishir
+git clone https://github.com/Shishir1710/cinnamon-stack-stats.git ~/.local/share/cinnamon/applets/cinnamon-stack-stats@shishir
+```
+
+## Activation
+
+1. Reload Cinnamon: Press `Alt + F2`, type `r`, and hit Enter.
+2. Add to Panel:
+  -  Right-click your panel → click Applets.
+  -  Under the Installed tab, find cinnamon-stack-stats.
+  -   lick the + button at the bottom to add it to your panel.
+3. Configure:
+  - Right-click the newly added applet on your panel → click Configure to adjust colors, refresh rate, and visible components.
