@@ -1,0 +1,163 @@
+{
+  "layout": {
+    "type": "layout",
+    "pages": ["general", "customization", "about"],
+    "general": {
+      "type": "page",
+      "title": "General",
+      "sections": ["sec_timing", "sec_cpu", "sec_gpu", "sec_net", "sec_other"]
+    },
+    "customization": {
+      "type": "page",
+      "title": "Customization",
+      "sections": ["sec_typography", "sec_borders", "sec_colors"]
+    },
+    "about": {
+      "type": "page",
+      "title": "About",
+      "sections": ["sec_info"]
+    },
+    "sec_timing": {
+      "type": "section",
+      "title": "Polling",
+      "keys": ["updateInterval"]
+    },
+    "sec_cpu": {
+      "type": "section",
+      "title": "CPU Settings",
+      "keys": ["showCpuTemp", "showCpuUsage"]
+    },
+    "sec_gpu": {
+      "type": "section",
+      "title": "GPU Settings",
+      "keys": ["showGpuTemp", "showGpuUsage"]
+    },
+    "sec_net": {
+      "type": "section",
+      "title": "Network Settings",
+      "keys": ["showNetUp", "showNetDown"]
+    },
+    "sec_other": {
+      "type": "section",
+      "title": "Memory & Storage",
+      "keys": ["showMem", "showSwap", "showDisk"]
+    },
+    "sec_typography": {
+      "type": "section",
+      "title": "Typography",
+      "keys": ["fontFamily", "fontSize", "boldHeaders"]
+    },
+    "sec_borders": {
+      "type": "section",
+      "title": "Separators",
+      "keys": ["showSeparator", "separatorColor"]
+    },
+    "sec_colors": {
+      "type": "section",
+      "title": "Colors",
+      "keys": ["headerColor", "valueColor"]
+    },
+    "sec_info": {
+      "type": "section",
+      "title": "Applet Info",
+      "keys": ["appVersion"]
+    }
+  },
+  "appVersion": {
+    "type": "label",
+    "description": "Custom System Monitor - v1.2.0"
+  },
+  "updateInterval": {
+    "type": "spinbutton",
+    "default": 2,
+    "min": 1,
+    "max": 10,
+    "step": 1,
+    "units": "seconds",
+    "description": "Refresh Interval"
+  },
+  "showCpuTemp": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show CPU Temperature"
+  },
+  "showCpuUsage": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show CPU Usage"
+  },
+  "showGpuTemp": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show GPU Temperature"
+  },
+  "showGpuUsage": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show GPU Usage"
+  },
+  "showNetUp": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show Upload Speed (▲)"
+  },
+  "showNetDown": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show Download Speed (▼)"
+  },
+  "showMem": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show RAM Usage"
+  },
+  "showSwap": {
+    "type": "checkbox",
+    "default": false,
+    "description": "Show SWAP Usage"
+  },
+  "showDisk": {
+    "type": "checkbox",
+    "default": false,
+    "description": "Show Root Disk Usage (/)"
+  },
+  "fontFamily": {
+    "type": "fontchooser",
+    "default": "Ubuntu",
+    "description": "Font Family"
+  },
+  "fontSize": {
+    "type": "spinbutton",
+    "default": 9,
+    "min": 6,
+    "max": 14,
+    "step": 1,
+    "units": "pt",
+    "description": "Font Size"
+  },
+  "boldHeaders": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Bold Section Headers"
+  },
+  "showSeparator": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show Column Separators"
+  },
+  "separatorColor": {
+    "type": "colorchooser",
+    "default": "rgba(255, 255, 255, 0.2)",
+    "description": "Separator Border Color"
+  },
+  "headerColor": {
+    "type": "colorchooser",
+    "default": "#b0b0b0",
+    "description": "Header Label Color"
+  },
+  "valueColor": {
+    "type": "colorchooser",
+    "default": "#ffffff",
+    "description": "Value Color"
+  }
+}
